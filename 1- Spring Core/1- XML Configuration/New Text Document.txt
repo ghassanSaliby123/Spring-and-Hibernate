@@ -1,7 +1,0 @@
-This section illustrates the Spring configurations throug XML file
-it covers the follwing: 
-Ioc
-DI through constructor (constructor arg) and setter(property name ref)
-injectioing literal values throuhg setter and through (property name value) through property files
-Bean scope singleton and prototype and its lifecycle 
-init method and destroy method throgh init-method , destroy-methhod poperties 
