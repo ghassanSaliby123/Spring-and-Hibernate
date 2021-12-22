@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xmlns:context="http://www.springframework.org/schema/context"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <!-- Define your beans here -->
+   			<!-- Bean for HappyFortuneService -->
+    <bean id="happyFortuneService"
+    	  class= "com.ghassan.springdemo.HappyFortuneService">
+    </bean>
+ <!-- DI through constructor -->
+    	<!-- Bean for baseballCoach-->
+    <bean id="baseballCoach"
+    class="com.ghassan.springdemo.BaseballCoach">
+   			 <!-- Set up constructor injection -->
+   			 <constructor-arg ref="happyFortuneService"></constructor-arg>
+    </bean>
+    
+    		<!-- Bean for trackCoach -->
+    <bean id="trackCoach"
+   		 class= "com.ghassan.springdemo.TrackCoach">
+   			 <!-- Set up constructor injection -->
+   		 <constructor-arg ref="happyFortuneService"></constructor-arg>
+    </bean>
+    
+  <!-- DI through Setter -->
+    <!-- Bean for CricketCoach-->
+    <bean id="cricketCoach"
+    class="com.ghassan.springdemo.CricketCoach">
+   			 <!-- Set up Setter injection -->
+   			<property name="fortuneService" ref="happyFortuneService"></property>
+    </bean>
+   
+    		<!-- Bean for basketballCoach -->
+    <bean id="basketballCoach"
+    class="com.ghassan.springdemo.BasketballCoach">
+    </bean>
+    
+    		
+    	
+    
+    
+</beans>
+
+
+
+
+
