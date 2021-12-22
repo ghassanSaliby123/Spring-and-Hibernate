@@ -1,7 +1,0 @@
-This section illustrates the Spring configurations throug annotations
-it covers the follwing: 
-Ioc
-DI through constructor ,setter and field through @Autowired
-injectioing literal values throuhg adding a property files and @Value
-Bean scope singleton and prototype @Scope and its lifecycle 
-init method and destroy method throgh @PostConstruct @PreDestroy
