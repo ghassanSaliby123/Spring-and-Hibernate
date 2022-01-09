@@ -11,6 +11,6 @@ public class HomeController {
 	@RequestMapping("/")
 	public String showPage() {
 		//return the page name. it will turn to /WEB-INF/view/main-menu.jsp
-		return "main-menu";
+		return "home-page";
 	}
 }
