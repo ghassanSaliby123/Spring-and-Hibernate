@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Built-By: Administrator
+Build-Jdk: 17.0.1
+Implementation-Title: thymeleafdemo-employees-crud-security-with-in-memo
+ ry-authentication
+Implementation-Version: 1.0.0
+Implementation-Vendor-Id: com.luv2code.springboot
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-boot
+ -starter-parent/thymeleafdemo-employees-crud-security-with-in-memory-au
+ thentication
+Created-By: Maven Integration for Eclipse
+
